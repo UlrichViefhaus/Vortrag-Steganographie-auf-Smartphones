@@ -1,0 +1,264 @@
+\documentclass{beamer}
+%\setmainfont[Ligatures=TeX, ]{Linux Libertine O}
+%\setmainfont{Old Standard}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+\setotherlanguage{greek}
+\setotherlanguage{english}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
+\newfontfamily\greekfont[Script=Greek]{Linux Libertine O}
+\newfontfamily\greekfontsf[Script=Greek]{Linux Libertine O}
+
+\usepackage{graphicx}
+
+\usepackage{amsthm}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Inhalt}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\usetheme{Warsaw}
+\hypersetup{pdfstartview={Fit}}
+
+\newtheorem{mydef}{Definition}
+
+\begin{document}
+
+\title{Steganographie und Steganalyse auf Smartphones}
+\author{Ulrich Viefhaus}
+\institute
+{
+  FernUniversität in Hagen
+}
+\date{16. und 17. September 2016}
+\subject{Steganographie, Inforation Hiding, Steganalysis}
+
+\frame[allowframebreaks]{\titlepage}
+
+\section{Grundlagen der Steganographie}
+
+\begin{frame}
+    \frametitle{Bedeutung}
+    \begin{mydef}
+    Das Wort Steganographie setzt sich aus den beiden altgriechischen Wörtern \textgreek[variant=ancient]{στεγανός} (bedeckt) und \textgreek[variant=ancient]{γράφειν} (schreiben) zusammen. Sinngemäß bedeutet es „geheimes Schreiben“.
+  \end{mydef}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Abgrenzung Kryptographie}
+    Kryptographie und Steganographie haben unterschiedliche Ziele.
+	  \begin{itemize}
+	    \item Kryptographie: Nachrichten werden durch Verschlüsselung geschützt, aber offen versendet .
+	    \item Steganographie: Existenz von Nachrichten wird verborgen.
+	  \end{itemize}
+	  Es ist durchaus möglich eine Nachricht erst zu verschlüsseln und sie dann durch Steganographie zu verstecken.
+\end{frame}
+  
+\begin{frame}
+    \frametitle{Kerckhoffs' Prinzip}
+    \begin{mydef}
+      Die Sicherheit eines Verschlüsselungsverfahrens darf nur von der Geheimhaltung des Schlüssel abhängen, nicht jedoch von der Geheimhaltung des Algorithmus.
+  \end{mydef}
+    \begin{itemize}
+      \item Wurde bei Steganographie lange nicht beachtet.
+      \item Optische Unerkennbarkeit war entscheidend.
+      \item Findet in neueren Algorithmen Anwendung.
+    \end{itemize}
+    \note{Zitat aus Woflgang Ertel -- Angewandte Kryptographie}
+    \note{War lange nicht wichtig, da allein die optischen Eigenschaften Relevanz hatten.}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tarnmedium}
+  \begin{mydef}
+  Ein Tarnmedium (engl. cover medium) ist ein Medium, in dem eine geheime Nachricht versteckt wird.
+  \end{mydef}
+  Beispiel: Bild im jpeg Format.
+\end{frame}
+
+\begin{frame}
+\frametitle{Verdeckter Kanal}
+  \begin{mydef}
+  Ein verdeckter Kanal (engl. hidden channel) dient dem Übermitteln von Informationen über ein Protokoll auf eine Art, die in dem Protokoll nicht vorgesehen ist.
+  \end{mydef}
+  Beispiel: Nutzung des „Options“ Feldes im TCP Header zur Datenübertragung.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Stegoschlüssel}
+    \begin{mydef}
+    Ein Stegoschlüssel (engl. stegokey) ist ein Schlüssel, mit dem die Verteilung der Bits der geheimen Nachricht in dem Tarnmedium festgelegt wird.
+  \end{mydef}
+  Beispiel: Vereinbarter Schlüssel wird als Seed für einen PRNG genutzt, der bestimmt in welchen Pixeln eines Bildes die geheime Nachricht versteckt wird.
+\end{frame}
+
+\begin{frame}
+  Analog zu kryptografischen Schlüsseln gibt es zwei Arten von Stegoschlüsseln:
+  \begin{itemize}
+	    \item Symmetrische Stegoschlüssel
+	    \item Asymmetrische Stegoschlüssel	    
+	  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Notwendige Eigenschaften}
+  Bei der verdeckten Kommunikation müssen drei notwendige Eigenschaften gegeneinander abgewogen werden:
+  \begin{itemize}
+    \item Bandbreite (engl. steganographic bandwidth)
+    \item Unerkennbarkeit (engl. security)
+    \item Widerstandsfähigkeit (engl. robustness)
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}  
+\frametitle{Magisches Dreieck}
+\centering
+    \def\svgwidth{\columnwidth}
+    \input{../Inkscape/magic_triangle.pdf_tex}
+\end{frame}
+
+\section{Steganographie auf Smartphones}
+
+\begin{frame}
+  \frametitle{Besonderheiten auf Smartphones}
+  \begin{itemize}
+    \item Energieverbrauch ist von großer Bedeutung
+    \item Vielzahl an Sensoren und Netzwerkschnittstellen
+    \item Große Anzahl sensibler Daten
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Arten von verdeckten Kanälen auf Smartphones}
+	  \begin{itemize}
+	    \item Lokale Kanäle
+	    \item Objektkanäle
+	    \item Netzwerkkanäle
+	  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lokale Kanäle}
+  Lokale Kanäle werden durch steganographische Verfahren erzeugt, die auf Systemresourcen angewandt werden.
+  Sie ermöglichen die verdeckte Kommunikation zwischen Prozessen auf dem selben Gerät.
+  Beispiele:
+  \begin{itemize}
+    \item Vibrationseinstellungen
+    \item Lockfiles
+    \item Prozessorauslastung
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Objektkanäle}
+  Objektkanäle werden durch steganographische Verfahren erzeugt, die auf virtuelle Objekte wie Dateien angewandt werden.
+  Objekte eignen sich sowohl zum Speichern von geheimen Informationen als auch zum Versand über andere Dienste.
+  Beispiele:
+  \begin{itemize}
+    \item Multimediadateien in diversen Formaten (z.B. JPEG, Gif, MPEG, mp3)
+    \item Textdateien (z.B. PDF und Word)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Netzwerkkanäle}
+  Netzwerkkanäle werden durch steganographische Verfahren erzeugt, die auf Netzwerkprotokolle- und Anwendungen.
+  Netzwerkdienste eignen sich zur verdeckten Kommunikation mit anderen Geräten.
+  Beispiele:
+  \begin{itemize}
+    \item HTTP mittels URLs
+    \item Videostream mit spezifischen Abständen zwischen Frames
+    \item Einfügen von energiearmen Töne in GSM-kodierte Sprachübertragung
+  \end{itemize}
+\end{frame}
+
+\section{Gefahren}
+\begin{frame}
+  \frametitle{Gefahren von Steganographie auf Smartphones}
+  Durch Steganographie entstehen auf Smartphones zwei weitere Gefahren für den Nutzer, die nur schwer zu erkennen sind.
+  \begin{itemize}
+    \item Unbemerktes Ausleiten von sensiblen Informationen.
+    \item Unbemerktes Empfangen von Befehlen.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Schema für das Ausleiten von Informationen}
+  \centering
+    \def\svgwidth{\columnwidth}
+    \input{../Inkscape/hidden_channel.pdf_tex}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Schema für das Empfangen von Befehlen}
+  \centering
+    \def\svgwidth{\columnwidth}
+    \input{../Inkscape/hidden_commands.pdf_tex}
+\end{frame}
+
+\section{Gegenmaßnahmen}
+
+\begin{frame}
+\frametitle{Gegenmaßnahmen}  
+Gegenmaßnahmen sind in drei Bereiche gegliedert:
+\begin{itemize}
+  \item Erkennung (Stegoanalyse)
+  \item Beseitigung
+  \item Reduktion der Bandbreite
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Maßnahmen gegen lokale Kanäle}
+  Erkennen von Steganographie durch:
+  \begin{itemize}
+    \item Taint tracking
+    \item Überwachung von API-Aufrufen
+    \item Überprüfung auf Grenzwerte
+  \end{itemize}
+  Falls ein Zugriff auf lokale Ressourcen als bösartig eingeschätzt wird, kann dieser unterbunden werden.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Maßnahmen gegen Objektkanäle}
+  Erkennen von Steganographie durch:
+  \begin{itemize}
+    \item Signaturen
+    \item Statistischen Methoden
+  \end{itemize}
+  Nach der Erkennung kann die versteckte Nachricht aus dem Tarnmedium entfernt werden.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Maßnahmen gegen Netzwerkkanäle}
+  Erkennen oder Entfernen von Steganograhie durch
+  \begin{itemize}
+    \item Network traffic normalizer
+    \item Statistischen Methoden
+    \item Maschinelles Lernen
+  \end{itemize}
+\end{frame}
+
+\section{Weiterführende Literatur}
+  \begin{frame}[allowframebreaks]
+  \frametitle{Further reading}    
+  \begin{thebibliography}{10}    
+  \beamertemplatearticlebibitems
+  \bibitem{BAGE}
+    
+  \end{thebibliography}
+  \end{frame}
+  
+\begin{frame}
+	\centering Danke für Ihre Aufmerksamkeit!
+	\centering Fragen?
+\end{frame}
+
+\end{document}
