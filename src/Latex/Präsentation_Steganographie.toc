@@ -4,4 +4,3 @@
 \beamer@sectionintoc {2}{Steganographie auf Smartphones}{12}{0}{2}
 \beamer@sectionintoc {3}{Gefahren}{18}{0}{3}
 \beamer@sectionintoc {4}{Gegenmaßnahmen}{22}{0}{4}
-\beamer@sectionintoc {5}{Weiterführende Literatur}{27}{0}{5}

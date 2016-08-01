@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2015/dev/Debian) (rev 4971)  (format=lualatex 2015.5.17)  28 JUL 2016 20:27
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2015/dev/Debian) (rev 4971)  (format=lualatex 2015.5.17)  1 AUG 2016 18:15
  restricted \write18 enabled.
 **Präsentation_Steganographie.tex
 (./Präsentation_Steganographie.tex
@@ -940,7 +940,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.074 seconds
+luaotfload | main : fontloader loaded in 0.044 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -1636,7 +1636,7 @@ Package polyglossia Info: Option: Ancient Greek.
 ] [10
 
 ] (./magic_triangle.pdf_tex
-<magic_triangle.pdf, id=397, 859.58119pt x 362.97083pt>
+<magic_triangle.pdf, id=380, 859.58119pt x 362.97083pt>
 File: magic_triangle.pdf Graphic file (type pdf)
 
 <use magic_triangle.pdf>
@@ -1663,7 +1663,7 @@ Package pdftex.def Info: magic_triangle.pdf used on input line 52.
 ] [19
 
 ] (./hidden_channel.pdf_tex
-<hidden_channel.pdf, id=713, 422.05605pt x 334.35413pt>
+<hidden_channel.pdf, id=685, 422.05605pt x 334.35413pt>
 File: hidden_channel.pdf Graphic file (type pdf)
 
 <use hidden_channel.pdf>
@@ -1671,7 +1671,7 @@ Package pdftex.def Info: hidden_channel.pdf used on input line 52.
 (pdftex.def)             Requested size: 227.62204pt x 180.32405pt.
 ) [20
 
-<./hidden_channel.pdf>] (./hidden_commands.pdf_tex <hidden_commands.pdf, id=871
+<./hidden_channel.pdf>] (./hidden_commands.pdf_tex <hidden_commands.pdf, id=842
 , 555.53923pt x 260.53145pt>
 File: hidden_commands.pdf Graphic file (type pdf)
 
@@ -1691,12 +1691,7 @@ Package pdftex.def Info: hidden_commands.pdf used on input line 52.
 
 ] [26
 
-]
-(./Präsentation_Steganographie.toc) [27
-
-] [28
-
-</usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>] [29
+] [27
 
 ]
 \tf@nav=\write6
@@ -1710,30 +1705,30 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `Präsentation_Steganographie.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: B65A266339F7BE29E7F4835B293C59F8;282.
+(rerunfilecheck)             Checksum: 94B78BDC7C031D4007FB56130B91D5B5;222.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31427 strings out of 493787
+ 31373 strings out of 493787
  125200,794899 words of node,token memory allocated
- 4561 words of node memory still in use:
-   48 hlist, 14 vlist, 4 rule, 31 disc, 81 glue, 12 kern, 16 penalty, 165 glyph,
- 416 attribute, 91 glue_spec, 245 attribute_list, 5 action, 3 write, 8 local_par
-, 1 pdf_refxform, 5 pdf_start_link, 5 pdf_end_link, 34 pdf_colorstack nodes
-   avail lists: 1:5,2:2599,3:584,4:663,5:124,6:1086,7:36,8:43,9:373,10:158
- 33838 multiletter control sequences out of 65536+600000
- 33 fonts using 3898855 bytes
+ 4017 words of node memory still in use:
+   46 hlist, 14 vlist, 4 rule, 24 disc, 76 glue, 11 kern, 16 penalty, 135 glyph,
+ 349 attribute, 89 glue_spec, 209 attribute_list, 4 action, 3 write, 8 local_par
+, 1 pdf_refxform, 4 pdf_start_link, 4 pdf_end_link, 32 pdf_colorstack nodes
+   avail lists: 1:4,2:2576,3:568,4:639,5:122,6:1086,7:36,8:40,9:343,10:158
+ 33797 multiletter control sequences out of 65536+600000
+ 33 fonts using 3898859 bytes
  65i,19n,66p,961b,748s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RI.o
 tf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/t
 exmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opent
 ype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lm
 sans8-regular.otf>
-Output written on Präsentation_Steganographie.pdf (29 pages, 470537 bytes).
+Output written on Präsentation_Steganographie.pdf (27 pages, 462016 bytes).
 
-PDF statistics: 1421 PDF objects out of 1440 (max. 8388607)
- 1198 compressed objects within 12 object streams
- 65 named destinations out of 1000 (max. 131072)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 1305 PDF objects out of 1440 (max. 8388607)
+ 1089 compressed objects within 11 object streams
+ 59 named destinations out of 1000 (max. 131072)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
