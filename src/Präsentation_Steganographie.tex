@@ -28,6 +28,19 @@
 
 \newtheorem{mydef}{Definition}
 
+\newcommand{\executeiffilenewer}[3]{%
+\ifnum\pdfstrcmp{\pdffilemoddate{#1}}%
+{\pdffilemoddate{#2}}>0%
+{\immediate\write18{#3}}\fi%
+}
+\newcommand{\includesvg}[1]{%
+\executeiffilenewer{#1.svg}{#1.pdf}%
+{inkscape -z -D --file=#1.svg --export-pdf=#1.pdf --export-latex}%
+\input{#1.pdf_tex}%
+}
+
+\graphicspath{{Inkscape/}}
+
 \begin{document}
 
 \title{Steganographie und Steganalyse auf Smartphones}
@@ -121,7 +134,7 @@
 \frametitle{Magisches Dreieck}
 \centering
     \def\svgwidth{\columnwidth}
-    \input{magic_triangle.pdf_tex}
+    \includesvg{magic_triangle}
 \end{frame}
 
 \section{Steganographie auf Smartphones}
@@ -193,14 +206,14 @@
   \frametitle{Schema für das Ausleiten von Informationen}
   \centering
     \def\svgwidth{8cm}
-    \input{hidden_channel.pdf_tex}
+    \includesvg{hidden_channel}
 \end{frame}
 
 \begin{frame}
   \frametitle{Schema für das Empfangen von Befehlen}
   \centering
     \def\svgwidth{\columnwidth}
-    \input{hidden_commands.pdf_tex}
+    \includesvg{hidden_commands}
 \end{frame}
 
 \section{Gegenmaßnahmen}
@@ -238,7 +251,7 @@ Gegenmaßnahmen sind in drei Bereiche gegliedert:
 
 \begin{frame}
   \frametitle{Maßnahmen gegen Netzwerkkanäle}
-  Erkennen oder Entfernen von Steganograhie durch
+  Erkennen oder Entfernen von Steganographie durch
   \begin{itemize}
     \item Network traffic normalizer
     \item Statistischen Methoden
