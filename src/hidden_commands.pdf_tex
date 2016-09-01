@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'hidden_channel.pdf' (pdf, eps, ps)
+%% Accompanies image file 'hidden_commands.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{420.47924805bp}%
+    \setlength{\unitlength}{765.58301938bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,20 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.79220314)%
-    \put(0,0){\includegraphics[width=\unitlength]{hidden_channel.pdf}}%
-    \put(0.16926474,0.3766548){\makebox(0,0)[lb]{\smash{Hidden}}}%
-    \put(0.16926474,0.34203406){\makebox(0,0)[lb]{\smash{Channel}}}%
-    \put(0.16926474,0.41325593){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Local}}}%
-    \put(0.45431579,0.2285476){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Internet}}}%
-    \put(0.09344778,0.01662459){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Smartphone}}}%
-    \put(0.08634169,0.63128813){\makebox(0,0)[lb]{\smash{Bösartige}}}%
-    \put(0.12376077,0.4747772){\makebox(0,0)[lb]{\smash{Sandbox}}}%
-    \put(0.08634169,0.56850263){\makebox(0,0)[lb]{\smash{App}}}%
-    \put(0.12376077,0.09569832){\makebox(0,0)[lb]{\smash{Sandbox}}}%
-    \put(0.06927183,0.25226666){\makebox(0,0)[lb]{\smash{Begleit-}}}%
-    \put(0.06736924,0.18567598){\makebox(0,0)[lb]{\smash{App}}}%
-    \put(0.45431579,0.48784187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Firewall}}}%
-    \put(0.61341723,0.01662459){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Bösartiger Server}}}%
+  \begin{picture}(1,0.4654942)%
+    \put(0,0){\includegraphics[width=\unitlength]{hidden_commands.pdf}}%
+    \put(0.19322345,0.39437644){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Wetterapp}}}%
+    \put(0.56023212,0.43005782){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Wetterserver}}}%
+    \put(0.34916797,0.31190142){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Pushnachrichten}}}%
+    \put(0.25056856,0.24028377){\color[rgb]{1,0,0.55294118}\makebox(0,0)[lb]{\smash{geheime Befehle}}}%
+    \put(0.34916797,0.28819965){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{mit Wetterdaten}}}%
   \end{picture}%
 \endgroup%

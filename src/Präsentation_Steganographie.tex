@@ -28,18 +28,10 @@
 
 \newtheorem{mydef}{Definition}
 
-\newcommand{\executeiffilenewer}[3]{%
-\ifnum\pdfstrcmp{\pdffilemoddate{#1}}%
-{\pdffilemoddate{#2}}>0%
-{\immediate\write18{#3}}\fi%
-}
 \newcommand{\includesvg}[1]{%
-\executeiffilenewer{#1.svg}{#1.pdf}%
-{inkscape -z -D --file=#1.svg --export-pdf=#1.pdf --export-latex}%
+%\write18{inkscape -z -D #1.svg --export-pdf=#1.pdf --export-latex}%
 \input{#1.pdf_tex}%
 }
-
-\graphicspath{{Inkscape/}}
 
 \begin{document}
 
@@ -124,7 +116,7 @@
   Bei der verdeckten Kommunikation müssen drei notwendige Eigenschaften gegeneinander abgewogen werden:
   \begin{itemize}
     \item Bandbreite (engl. steganographic bandwidth)
-    \item Unerkennbarkeit (engl. security)
+    \item Heimlichkeit (engl. stealthiness)
     \item Widerstandsfähigkeit (engl. robustness)
   \end{itemize}
   

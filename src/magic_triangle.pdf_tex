@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.48.5, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'hidden_commands.pdf' (pdf, eps, ps)
+%% Accompanies image file 'magic_triangle.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{553.46376953bp}%
+    \setlength{\unitlength}{889.93230591bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +48,10 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.46897036)%
-    \put(0,0){\includegraphics[width=\unitlength]{hidden_commands.pdf}}%
-    \put(0.26727782,0.37059618){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Wetterapp}}}%
-    \put(0.7749454,0.41995272){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Wetterserver}}}%
-    \put(0.48298928,0.25651197){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Pushnachrichten}}}%
-    \put(0.34660088,0.1574463){\color[rgb]{1,0,0.55294118}\makebox(0,0)[lb]{\smash{geheime Befehle}}}%
-    \put(0.48298928,0.22372631){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{mit Wetterdaten}}}%
+  \begin{picture}(1,0.40633964)%
+    \put(0,0){\includegraphics[width=\unitlength]{magic_triangle.pdf}}%
+    \put(0.42378685,0.37902015){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Bandbreite}}}%
+    \put(0.10775047,0.00493854){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Heimlichkeit}}}%
+    \put(0.81090556,0.0074795){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Widerstandsfähigkeit}}}%
   \end{picture}%
 \endgroup%

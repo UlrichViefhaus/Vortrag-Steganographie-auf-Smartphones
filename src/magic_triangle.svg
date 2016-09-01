@@ -10,8 +10,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
+   width="1112.4154"
+   height="452.01846"
    id="svg5662"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -29,28 +29,30 @@
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lend"
-       style="overflow:visible;">
+       style="overflow:visible">
       <path
          id="path4239"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lstart"
        style="overflow:visible">
       <path
          id="path4236"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
-         transform="scale(0.8) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <linearGradient
        id="linearGradient7646"
@@ -68,9 +70,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.62"
-     inkscape:cx="61.046214"
-     inkscape:cy="811.79192"
+     inkscape:zoom="0.81354502"
+     inkscape:cx="486.75855"
+     inkscape:cy="226.00923"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -80,26 +82,31 @@
      inkscape:window-height="702"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:snap-page="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <sodipodi:guide
        orientation="0,1"
-       position="66.336634,861.38614"
+       position="109.17468,273.21967"
        id="guide5690" />
     <sodipodi:guide
        orientation="0,1"
-       position="382.25806,982.25806"
+       position="425.09611,394.09159"
        id="guide8551" />
     <sodipodi:guide
        orientation="0,1"
-       position="511.29032,641.93548"
+       position="554.12837,53.769007"
        id="guide8553" />
     <sodipodi:guide
        orientation="1,0"
-       position="159.67742,982.25806"
+       position="202.51547,394.09159"
        id="guide9663" />
     <sodipodi:guide
        orientation="1,0"
-       position="583.87097,982.25806"
+       position="626.70902,394.09159"
        id="guide9665" />
   </sodipodi:namedview>
   <metadata
@@ -117,10 +124,11 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(42.838051,-12.177242)">
     <path
        sodipodi:type="star"
-       style="fill-opacity:1;stroke:#000000;stroke-opacity:1;fill:#00beff"
+       style="fill:#00beff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
        id="path5688"
        sodipodi:sides="3"
        sodipodi:cx="250.49506"
@@ -150,14 +158,14 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="97.02523"
+       x="77.02523"
        y="458.702"
        id="text7672"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7674"
-         x="97.02523"
-         y="458.702">Sicherheit</tspan></text>
+         x="77.02523"
+         y="458.702">Heimlichkeit</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
